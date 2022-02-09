@@ -66,6 +66,8 @@ public class Converter {
         
         try {
             
+            StringBuilder json = new StringBuilder();
+            
             CSVReader reader = new CSVReader(new StringReader(csvString));
             List<String[]> full = reader.readAll();
             Iterator<String[]> iterator = full.iterator();
